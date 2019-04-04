@@ -15,11 +15,16 @@ int main()
     float operacionResta;
     float operacionDivision;
     float operacionMultiplicacion;
+    //float factorialA;
+    //float factorialB;
 
     printf("Ingrese el primer operando aqui: \n");
     scanf("%f",&a);
     printf("Ingrese el segundo operando aqui: \n");
     scanf("%f",&b);
+    printf("El valor cargado para el operando A = %.2f",a);
+    printf("\nEl valor cargado para el operando B = %.2f",b);
+
 
     operacionSuma=suma(a,b,"\nEl resultado de la suma A+B es:\n");
     operacionResta=resta(a,b,"\nEl resultado de la resta A-B es:\n");

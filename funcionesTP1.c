@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* \brief la funcion realiza la operacion suma.
+* \param recibe como parametros los valores tomados del main.
+* \return devuelve un flotante que lo imprime por printf.
+*/
 float suma(float x, float y, char* msj)
 {
     float resultado;
@@ -8,7 +13,11 @@ float suma(float x, float y, char* msj)
     printf("%s%.2f",msj,resultado);
     return 0;
 }
-
+/**
+* \brief la funcion realiza la operacion resta.
+* \param recibe como parametros los valores tomados del main.
+* \return devuelve un flotante que lo imprime por printf.
+*/
 float resta(float x, float y, char* msj)
 {
     float resultado;
@@ -16,7 +25,11 @@ float resta(float x, float y, char* msj)
     printf("%s%.2f",msj,resultado);
     return 0;
 }
-
+/**
+* \brief la funcion realiza la operacion division, y devuelve un error si la division se hace por 0.
+* \param recibe como parametros los valores tomados del main.
+* \return devuelve un flotante que lo imprime por printf.
+*/
 float division(float x, float y, char* msj, char* msjError)
 {
     float resultado;
@@ -31,7 +44,11 @@ float division(float x, float y, char* msj, char* msjError)
     }
     return 0;
 }
-
+/**
+* \brief la funcion realiza la operacion multiplicacion.
+* \param recibe como parametros los valores tomados del main.
+* \return devuelve un flotante que lo imprime por printf.
+*/
 float multiplicacion(float x, float y, char* msj)
 {
     float resultado;
