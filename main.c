@@ -1,11 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funcionesTP1.h"
-
-float suma(float x, float y, char* msj);
-float resta(float x, float y, char* msj);
-float division(float x, float y, char* msj, char* msjError);
-float multiplicacion(float x, float y, char* msj);
+#include "utn.c"
 
 int main()
 {
@@ -15,6 +11,7 @@ int main()
     float operacionResta;
     float operacionDivision;
     float operacionMultiplicacion;
+    //int menuOpciones;
     //float factorialA;
     //float factorialB;
 
@@ -25,11 +22,10 @@ int main()
     printf("El valor cargado para el operando A = %.2f",a);
     printf("\nEl valor cargado para el operando B = %.2f",b);
 
-
-    operacionSuma=suma(a,b,"\nEl resultado de la suma A+B es:\n");
-    operacionResta=resta(a,b,"\nEl resultado de la resta A-B es:\n");
-    operacionDivision=division(a,b,"\nEl resultado de la division A/B es:\n","\nno se puede dividir por 0.");
-    operacionMultiplicacion=multiplicacion(a,b,"\nEl resultado de la multiplicacion A*B es:\n");
+    suma(a,b,&operacionSuma,"\nEl resultado de la suma A+B es:\n");
+    resta(a,b,&operacionResta,"\nEl resultado de la resta A-B es:\n");
+    division(a,b,&operacionDivision,"\nEl resultado de la division A/B es:\n","\nno se puede dividir por 0.");
+    multiplicacion(a,b,&operacionMultiplicacion,"\nEl resultado de la multiplicacion A*B es:\n");
 
     return 0;
 }

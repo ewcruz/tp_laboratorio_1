@@ -6,10 +6,11 @@
 * \param recibe como parametros los valores tomados del main.
 * \return devuelve un flotante que lo imprime por printf.
 */
-float suma(float x, float y, char* msj)
+float suma(float x, float y, float* pResultado, char* msj)
 {
     float resultado;
     resultado=x+y;
+    *pResultado=resultado;
     printf("%s%.2f",msj,resultado);
     return 0;
 }
@@ -18,10 +19,11 @@ float suma(float x, float y, char* msj)
 * \param recibe como parametros los valores tomados del main.
 * \return devuelve un flotante que lo imprime por printf.
 */
-float resta(float x, float y, char* msj)
+float resta(float x, float y, float* pResultado, char* msj)
 {
     float resultado;
     resultado=x-y;
+    *pResultado=resultado;
     printf("%s%.2f",msj,resultado);
     return 0;
 }
@@ -30,7 +32,7 @@ float resta(float x, float y, char* msj)
 * \param recibe como parametros los valores tomados del main.
 * \return devuelve un flotante que lo imprime por printf.
 */
-float division(float x, float y, char* msj, char* msjError)
+float division(float x, float y, float* pResultado, char* msj, char* msjError)
 {
     float resultado;
     if(y==0)
@@ -42,6 +44,7 @@ float division(float x, float y, char* msj, char* msjError)
         resultado=x/y;
         printf("%s%.2f",msj,resultado);
     }
+    *pResultado=resultado;
     return 0;
 }
 /**
@@ -49,10 +52,11 @@ float division(float x, float y, char* msj, char* msjError)
 * \param recibe como parametros los valores tomados del main.
 * \return devuelve un flotante que lo imprime por printf.
 */
-float multiplicacion(float x, float y, char* msj)
+float multiplicacion(float x, float y, float* pResultado, char* msj)
 {
     float resultado;
     resultado=x*y;
+    *pResultado=resultado;
     printf("%s%.2f",msj,resultado);
     return 0;
 }
