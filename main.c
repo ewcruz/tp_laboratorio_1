@@ -16,8 +16,8 @@ int main()
     float operacionResta;
     float operacionDivision;
     float operacionMultiplicacion;
-    //float factorialA;
-    //float factorialB;
+    float factorialA;
+    float factorialB;
     int nroOpciones;
     int ret;
 
@@ -37,26 +37,29 @@ int main()
         {
             case 1:
                 getFloat(&a,"\nIngrese el valor para A:\n","Ingrese un numero por favor:\n",MIN,MAX,REPETICIONES);
-                printf("\nEl valor ingresado para A es: %.2f\n",a);
                 break;
             case 2:
                 getFloat(&b,"\nIngrese el valor para B:\n","Ingrese un numero por favor:\n",MIN,MAX,REPETICIONES);
-                printf("\nEl valor ingresado para B es: %.2f\n",b);
                 break;
             case 3:
                 suma(a,b,&operacionSuma);
                 resta(a,b,&operacionResta);
                 multiplicacion(a,b,&operacionMultiplicacion);
+                factorial(a,&factorialA);
+                factorial(b,&factorialB);
                 printf("\nTodas las operaciones calculadas\n");
                 break;
             case 4:
-                printf("El resultado de A+B es: %.2f\n",operacionSuma);
+                printf("\nEl valor ingresado en A = %.2f\n",a);
+                printf("El valor ingresado en B = %.2f\n",b);
+                printf("\nEl resultado de A+B es: %.2f\n",operacionSuma);
                 printf("El resultado de A-B es: %.2f\n",operacionResta);
                 division(a,b,&operacionDivision,"El resultado de la division A/B es: ","\nno se puede dividir por 0.\n");
                 printf("\nEl resultado de A*B es: %.2f\n",operacionMultiplicacion);
+                printf("El factorial de A es: %.2f y el factorial de B es: %.2f\n",factorialA,factorialB);
                 break;
             case 5:
-                printf("________________________");
+                printf("_____________________\n");
                 printf("\n Gracias por pasar!\n");
                 ret=-1;
                 break;
