@@ -45,8 +45,6 @@ int main()
                 suma(a,b,&operacionSuma);
                 resta(a,b,&operacionResta);
                 multiplicacion(a,b,&operacionMultiplicacion);
-                factorial(a,&factorialA);
-                factorial(b,&factorialB);
                 printf("\nTodas las operaciones calculadas\n");
                 break;
             case 4:
@@ -56,6 +54,8 @@ int main()
                 printf("El resultado de A-B es: %.2f\n",operacionResta);
                 division(a,b,&operacionDivision,"El resultado de la division A/B es: ","\nno se puede dividir por 0.\n");
                 printf("\nEl resultado de A*B es: %.2f\n",operacionMultiplicacion);
+                factorial(a,&factorialA,"El factorial de A es: ","\nsolo se puede factorear numeros naturales.\n");
+                factorial(b,&factorialB,"El factorial de B es: ","\nsolo se puede factorear numeros naturales.\n");
                 printf("El factorial de A es: %.2f y el factorial de B es: %.2f\n",factorialA,factorialB);
                 break;
             case 5:

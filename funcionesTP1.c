@@ -66,9 +66,20 @@ float factorial(float x, float* pResultado)
 {
     float auxNum;
     float fact=1;
-    for(auxNum=1;auxNum<=x;auxNum++)
+    if(x==0)
     {
-        fact=fact*auxNum;
+        fact=fact;
+    }
+    if(x>0)
+    {
+        for(auxNum=1;auxNum<=x;auxNum++)
+        {
+            fact=fact*auxNum;
+        }
+    }
+    else if(x<0)
+    {
+        printf("\nError en la operacion, solo se pueden factorear numeros naturales\n");
     }
     *pResultado=fact;
     return 0;
