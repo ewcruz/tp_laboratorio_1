@@ -1,21 +1,23 @@
 # depslib dependency file v1.0
-1554500421 source:e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\main.c
+1554509999 source:e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funcionesTP1.h"
-	"utn.c"
+	"utn.h"
 
-1554500240 e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\funcionestp1.h
+1554510186 e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\funcionestp1.h
 
-1554500611 source:e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\funcionestp1.c
+1554508878 source:e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\funcionestp1.c
 	<stdio.h>
 	<stdlib.h>
 
-1554500409 source:e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\utn.c
+1554509925 source:e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\utn.c
 	<stdio.h>
 	<stdlib.h>
 
-1554500409 e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\utn.c
+1554509925 e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\utn.c
 	<stdio.h>
 	<stdlib.h>
+
+1554510186 e:\programacion y laboratorio 1\tp_laboratorio_1\tp_laboratorio_1\utn.h
 

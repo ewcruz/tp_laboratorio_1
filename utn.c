@@ -65,10 +65,10 @@ int getInt(int* pInt, char* msj, char *msjError, int min, int max, int reintento
         return ret;
 }
 
-float getFloat(float* pFloat, char* msj, char* msjError, int min, int max, int reintentos)
+float getFloat(float* pFloat, char* msj, char* msjError, float min, float max, float reintentos)
 {
     float auxNum;
-    int ret;
+    float ret;
 
     while(reintentos>0)
     {
